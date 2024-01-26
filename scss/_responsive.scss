@@ -1,0 +1,278 @@
+/***************/
+
+/* Lo hacemos responsive:  */
+
+/*Vista tablet*/
+/*768px hasta 1023px*/
+
+@media (max-width: 1023px) {
+    /*Header*/
+  
+    .encabezado {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+  
+      .boton {
+        display: none;
+      }
+    }
+  
+    /*Banner*/
+  
+    .bannerContenido p {
+      font-size: 2.5rem;
+    }
+  
+    .banner h1 {
+      text-align: center;
+    }
+  
+    /*Destinos*/
+  
+    .destinos {
+      margin: 5vh;
+      font-size: 2rem;
+  
+      h3, p {
+        font-size: inherit;
+      }
+    }
+  
+    .contenedorDestinos {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /*Trabajadores*/
+  
+    .contenedorGuias {
+      flex-direction: column;
+    }
+  
+    /*Footer*/
+  
+    .footerContenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  
+  /*Ajustes específicos para la vista móvil*/
+/*0 hasta 768px*/
+
+@media (max-width: 768px) {
+    /*Destinos */
+  
+    .contenedorDestinos {
+      grid-template-columns: 1fr;
+    }
+  
+    .derechos {
+      text-align: center;
+    }
+  }
+  
+  /* CSS Mapas Interactivos Destinos  */
+  
+  .mapa {
+    iframe {
+      width: 80%;
+      height: 450px;
+    }
+  
+    h2 {
+      color: #4eb8ff;
+    }
+  }
+  
+  /* Opiniones y Testimonios de Visitantes */
+  
+  .testimonios {
+    blockquote {
+      font-weight: bold;
+      border-left: 4px solid #4eb8ff;
+      margin: 20px;
+      font-size: 20px;
+      padding-left: 15px;
+    }
+  
+    h2 {
+      color: #4eb8ff;
+      font-size: 50px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+  }
+  
+  /*  Guías de Envios y Consejos */
+  
+  .guias {
+    box-shadow: 0px 0px 20px grey;
+    background-color: #4eb8ff;
+  
+    h3 {
+      padding: 40px;
+      font-size: 50px;
+      color: white;
+    }
+  
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+  
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  
+  /* CSS Responsivo (Media Queries) */
+@media only screen and (max-width: 600px) {
+    .galeria img, .mapa iframe {
+      width: 100%;
+      height: auto;
+    }
+  
+    .descripcion, .testimonios, .guias {
+      padding: 10px;
+    }
+  }
+  
+  /* Formulario de contacto responsive */
+@media screen and (max-width: 480px) {
+    .nbfds {
+      width: 100%;
+    }
+  }
+  
+  /* footer */
+  
+  .footer-Cont {
+    background-color: #003366;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  /* Testimonios */
+  
+  .pdf {
+    padding-top: 100px;
+    background-color: #ecf2f8;
+  }
+  
+  .small-p {
+    font-size: 18px;
+  }
+  
+  blockquote {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .containerGrid {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  /* Grid */
+  
+  #grid {
+    padding: 80px 0;
+  
+    .containerGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  /* Grid box */
+  
+  .grid-box {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .grid-box-author img {
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .grid-box-azul {
+    background-color: #4eb8ff;
+  }
+  
+  .grid-box-gray {
+    background-color: #1c73ff;
+  }
+  
+  .grid-box-navy {
+    background-color: #94bdff;
+  }
+  
+  .grid-box-white {
+    background-color: #fff;
+  }
+  
+  .grid-box-sofia {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  
+  .grid-box-Carlos {
+    grid-row: 1;
+    grid-column: 3/4;
+  }
+  
+  .grid-box-Luisa {
+    grid-row: 1/3;
+    grid-column: 4/5;
+  }
+  
+  .grid-box-Jorge {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  
+  .grid-box-Ana {
+    grid-row: 2/3;
+    grid-column: 2/4;
+  }
+  
+  /* Mobile */
+@media screen and (max-width: 768px) {
+    #grid .containerGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .grid-box-sofia, .grid-box-Carlos, .grid-box-Luisa, .grid-box-Jorge, .grid-box-Ana {
+      grid-column: 1;
+    }
+  
+    .grid-box-sofia {
+      grid-row: 1;
+    }
+  
+    .grid-box-Carlos {
+      grid-row: 2;
+    }
+  
+    .grid-box-Luisa {
+      grid-row: 3;
+    }
+  
+    .grid-box-Jorge {
+      grid-row: 4;
+    }
+  
+    .grid-box-Ana {
+      grid-row: 5;
+    }
+  }
+  

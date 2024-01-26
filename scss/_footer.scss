@@ -1,0 +1,61 @@
+/* Footer */
+.footer {
+    background-color: $color-AzulOscuro;
+    color: $color-blanco;
+    padding: 20px 0;
+}
+
+.logo-img img{
+    width: 100px;
+    border-radius: 5px;
+    background-color: $color-blanco;
+    margin-bottom: 20px;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.derechos{
+    text-align: end;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.infoContacto p,
+.redesSociales a {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+.contac{
+    color: $color-blanco;
+}
+
+.redesSociales{
+    color: #f2f2f2;
+}
+
+.redesSociales a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 3rem;
+    color: $color-blanco;
+}
+
+.redesSociales a:hover {
+    color: $color-rojo;
+}
+
+
+.footer i {
+    margin-right: 10px;
+}
